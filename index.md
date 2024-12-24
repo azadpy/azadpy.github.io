@@ -3,20 +3,22 @@ layout: default
 title: Nowhere Man - Travel Adventures
 ---
 
-# Welcome to Nowhere Man
+# Théo-nowhereman
+### Voyages autour du monde
 
-My journey around the world, one adventure at a time.
+![Traveler's Journey](/assets/images/header.jpg)
 
-## About This Blog
+## Latest Adventures
+- [Coming Soon: My First Adventure](/blog/first-adventure)
+- [Coming Soon: Hidden Gems](/blog/hidden-gems)
+- [Coming Soon: Travel Tips](/blog/travel-tips)
 
-This is where I share my travel experiences, photos, and stories from around the globe. Each post captures a unique moment, a special place, or an unforgettable encounter.
+## About The Journey
+Petit blog de mes différents voyages.
 
-## Recent Adventures
 
-[Coming soon - My latest travels and stories]
+## Recent Photos
+[Photo Gallery Coming Soon]
 
-## Contact
-
-Want to know more about my adventures? Feel free to reach out!
-
-[Contact information coming soon]
+---
+*"Il faut être prêt à se débarrasser de la vie qu'on a prévue, pour avoir la vie qui nous attend"*
