@@ -1,0 +1,30 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+body {
+  background: url('/assets/images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.main-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.page-header {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2c3e50;
+}
+
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+  color: #2c3e50;
+}
