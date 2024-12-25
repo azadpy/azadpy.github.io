@@ -1,17 +1,35 @@
+.menu-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 .countries-menu {
   display: none;
   position: fixed;
   top: 70px;
   right: 20px;
-  min-width: 200px;
-  padding: 10px 0;
-  z-index: 999;
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: white;
   border-radius: 12px;
-  color: white;
-  
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  min-width: 200px;
+  z-index: 999;
+
   &.active {
     display: block;
   }
@@ -21,10 +39,17 @@
   padding: 10px 20px;
   display: flex;
   align-items: center;
+  cursor: pointer;
   text-decoration: none;
-  color: white;
-  
+  color: #333;
+
   &:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background-color: #f5f5f5;
   }
+}
+
+.year {
+  color: #666;
+  font-size: 0.9em;
+  margin-left: 5px;
 }
