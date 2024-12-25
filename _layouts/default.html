@@ -8,9 +8,13 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
-    <header class="page-header">
-      <h1 class="project-name">{{ page.title | default: site.title }}</h1>
+    <header class="site-header">
+      <div class="banner-content">
+        <div class="site-title">NOWHEREMAN</div>
+        <div class="site-quote">"Il faut être prêt à se débarrasser de la vie que nous avons prévue, pour avoir la vie qui nous attend"</div>
+      </div>
     </header>
+
     <main id="content" class="main-content" role="main">
       {{ content }}
     </main>
