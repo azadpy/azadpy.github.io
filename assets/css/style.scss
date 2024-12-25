@@ -61,3 +61,42 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+.menu-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: 0.3s ease;
+    
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+.countries-menu {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.country-item {
+    color: white;
+    
+    &:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+    
+    .year {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
