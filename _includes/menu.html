@@ -119,3 +119,22 @@ document.addEventListener('click', function(event) {
     }
 });
 </script>
+<div class="menu-icon" onclick="toggleMenu()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round"/>
+    </svg>
+</div>
+
+<div class="countries-menu" id="countriesMenu">
+    <a href="/gallery/irlande" class="country-item">Irlande <span class="year">2017</span></a>
+    <a href="/gallery/islande" class="country-item">Islande <span class="year">2017</span></a>
+    <a href="/gallery/hongrie" class="country-item">Hongrie <span class="year">2019</span></a>
+    <!-- Add all other countries -->
+</div>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById('countriesMenu');
+    menu.classList.toggle('active');
+}
+</script>
