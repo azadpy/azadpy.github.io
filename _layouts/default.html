@@ -15,6 +15,33 @@
       </div>
     </header>
 
+    <div class="menu-icon" onclick="toggleMenu()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round"/>
+        </svg>
+    </div>
+
+    <div class="countries-menu" id="countriesMenu">
+        <a href="/gallery/irlande" class="country-item">Irlande <span class="year">2017</span></a>
+        <a href="/gallery/islande" class="country-item">Islande <span class="year">2017</span></a>
+        <!-- Add all your country links here -->
+    </div>
+
+    <script>
+    function toggleMenu() {
+        const menu = document.getElementById('countriesMenu');
+        menu.classList.toggle('active');
+    }
+
+    document.addEventListener('click', function(event) {
+        const menu = document.getElementById('countriesMenu');
+        const menuIcon = document.querySelector('.menu-icon');
+        if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
+            menu.classList.remove('active');
+        }
+    });
+    </script>
+
     <main id="content" class="main-content" role="main">
       {{ content }}
     </main>
