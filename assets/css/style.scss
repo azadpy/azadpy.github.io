@@ -14,7 +14,7 @@ body {
   left: 0;
   right: 0;
   padding: 1rem;
-  z-index: 999;
+  z-index: 998;  /* Changed to be below menu icon */
 }
 
 .banner-content {
@@ -38,31 +38,30 @@ body {
   font-size: 1.1rem;
 }
 
-/* Hide original header */
+/* Hide original headers */
 .page-header {
   display: none;
 }
 
-/* Hide original content box */
 .main-content {
   display: none;
 }
 
-/* Menu styles - keeping these the same */
+/* Menu Icon - Updated positioning */
 .menu-icon {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 1rem;      /* Aligned with banner */
+  right: 1rem;    /* Moved to far right */
   width: 40px;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   border-radius: 8px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
+  z-index: 1000;    /* Ensure it's above banner */
   transition: 0.3s ease;
 
   svg {
@@ -71,11 +70,10 @@ body {
   }
   
   &:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.5);
   }
 }
 
-/* Rest of your menu styles remain the same */
 .countries-menu {
   display: none;
   position: fixed;
