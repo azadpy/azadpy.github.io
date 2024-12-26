@@ -20,9 +20,11 @@ body {
 .banner-content {
   background-color: rgba(255, 255, 255, 0.3);
   padding: 1rem 2rem;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  width: 100%;
+  width: auto;
+  margin-left: 1rem;
+}
 }
 
 .site-title {
@@ -30,12 +32,14 @@ body {
   font-weight: bold;
   color: #1a1a1a;
   margin-right: 2rem;
+  white-space:nowrap;
 }
 
 .site-quote {
   font-style: italic;
   color: #1a1a1a;
   font-size: 1.1rem;
+  white-space:nowrap;
 }
 
 /* Hide original headers */
