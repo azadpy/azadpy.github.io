@@ -5,35 +5,33 @@
     <title>{{ page.title | default: site.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/favicon.ico">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 </head>
-  <body>
+<body>
     <header class="site-header">
       <div class="banner-content">
         <div class="site-title">NOWHEREMAN</div>
         <div class="site-quote">"Il faut être prêt à se débarrasser de la vie que nous avons prévue, pour avoir la vie qui nous attend"</div>
       </div>
     </header>
-
     <div class="menu-icon" onclick="toggleMenu()">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round"/>
         </svg>
     </div>
-
     <div class="countries-menu" id="countriesMenu">
         <a href="/gallery/irlande" class="country-item">Irlande <span class="year">2017</span></a>
         <a href="/gallery/islande" class="country-item">Islande <span class="year">2017</span></a>
         <!-- Add all your country links here -->
     </div>
-
     <script>
     function toggleMenu() {
         const menu = document.getElementById('countriesMenu');
         menu.classList.toggle('active');
     }
-
     document.addEventListener('click', function(event) {
         const menu = document.getElementById('countriesMenu');
         const menuIcon = document.querySelector('.menu-icon');
@@ -42,9 +40,8 @@
         }
     });
     </script>
-
     <main id="content" class="main-content" role="main">
       {{ content }}
     </main>
-  </body>
+</body>
 </html>
