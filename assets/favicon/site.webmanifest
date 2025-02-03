@@ -6,7 +6,7 @@
     "src": "/assets/favicon/web-app-manifest-192x192.png",
     "sizes": "192x192",
     "type": "image/png",
-    "purpose": "maskable"    // This helps your icon look good in different shapes
+    "purpose": "maskable"  
   },
   {
     "src": "/assets/favicon/web-app-manifest-512x512.png",
